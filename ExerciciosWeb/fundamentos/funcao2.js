@@ -18,3 +18,8 @@ console.log(soma(4, 3))
 const subtracao = (a, b) => a - b
 
 console.log(subtracao(1, 5))
+
+// Redução com apenas um parâmetro
+const imprime2 = a => console.log(a)
+
+imprime2("Legal!!!")
