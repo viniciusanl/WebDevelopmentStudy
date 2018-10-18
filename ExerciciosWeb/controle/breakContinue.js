@@ -14,10 +14,11 @@ for (y in nums) {
     console.log(`${y} = ${nums[y]}`)
 }
 
-externo:
+externo: // criar um rótulo para a estrutura de repetição for
     for (a in nums) {
         for (b in nums) {
             if (a == 2 && b == 3) break externo
+                // O break se refere a estrutura com o nome do rótulo
             console.log(`Par = ${a},${b}`)
         }
     }
