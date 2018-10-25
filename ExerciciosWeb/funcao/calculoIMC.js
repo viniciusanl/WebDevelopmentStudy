@@ -1,4 +1,4 @@
-massa = (altura, peso) => {
+const massa = (altura, peso) => {
     imc = peso / (altura * altura)
     if (imc < 15) {
         console.log("Extremamente abaixo do peso - IMC: ", imc)
@@ -21,3 +21,4 @@ massa = (altura, peso) => {
 
 
 massa(1.85, 85)
+massa(1.65, 90)
