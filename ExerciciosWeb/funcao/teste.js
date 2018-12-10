@@ -1,7 +1,7 @@
 const teste = []
 
 
-for(i=0;i<10;i++){
+for(i=0;i<20;i++){
     teste[i] = i;
     console.log(teste[i])
 }
