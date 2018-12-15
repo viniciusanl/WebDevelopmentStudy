@@ -25,3 +25,15 @@ while(cont =! "s"){
         num[i] = i;
     }
 }
+
+let num1, num2, num3, soma
+
+num1 = 5
+num2 = 8
+num3 = 10
+
+soma = num1 + num2 + num3
+
+console.log("A soma dos 3 numeros é", soma)
+
+console.log("A media dos 3 numeros é", soma/3)
