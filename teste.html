@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Calcular dois numeros</p>
+
+<form action="" id="formulario" method="POST">
+<input type="text" name="" value="" id="n1" placeholder="Digite um numero"/>
+<input type="text" name="" value="" id="n2" placeholder="Digite um numero"/>
+<input type="text" name="" value="" id="n3" placeholder="Digite um numero" />
+</form>
+
+<button onclick="somar()">Somar</button>
+
+<script>
+function somar() {
+    /*var person = prompt("Please enter your name", "Harry Potter");*/
+
+    let num1 = n1 = parseInt(document.getElementById('n1').value)
+
+    let num2 = n2 = parseInt(document.getElementById('n2').value)
+
+    let num3 = n3 = parseInt(document.getElementById('n3').value)
+
+
+    /* document.getElementById('resultado').innerHTML = n1 + n2; */
+
+    let soma = n1 + n2 + n3
+
+    prompt('O resultado da soma é ', soma)
+
+    prompt('A media é ', soma/3)
+}
+</script>
+
+</body>
+</html>
