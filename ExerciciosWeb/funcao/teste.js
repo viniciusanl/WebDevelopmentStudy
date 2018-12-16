@@ -37,3 +37,7 @@ soma = num1 + num2 + num3
 console.log("A soma dos 3 numeros é", soma)
 
 console.log("A media dos 3 numeros é", soma/3)
+
+
+let soMany = 10;
+console.log(`This is ${soMany} times easier!`);
