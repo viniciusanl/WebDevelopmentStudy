@@ -16,3 +16,10 @@ const mult = function mult(x, y){
     return x * y
 }
 console.log(mult(10, 50))
+
+// Teste
+const div = function (a, b){
+    return a / b
+}
+
+console.log(div(50, 5))
