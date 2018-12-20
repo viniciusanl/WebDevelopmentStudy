@@ -12,12 +12,12 @@
 </head>
 <body>
 
-<p>Calcular dois numeros</p>
+<p>Calcular numeros</p>
 
 <form action="" id="formulario" method="POST">
-<input type="text" name="" value="" id="n1" placeholder="Digite um numero"/>
-<input type="text" name="" value="" id="n2" placeholder="Digite um numero"/>
-<input type="text" name="" value="" id="n3" placeholder="Digite um numero" />
+<input type="text" name="" value="" id="n1" placeholder="Digite um numero"/><br>
+<input type="text" name="" value="" id="n2" placeholder="Digite um numero"/><br>
+<input type="text" name="" value="" id="n3" placeholder="Digite um numero"/>
 </form>
 
 <button onclick="somar()">Somar</button>
@@ -32,15 +32,14 @@ function somar() {
 
     let num3 = n3 = parseInt(document.getElementById('n3').value)
 
-
-    /* document.getElementById('resultado').innerHTML = n1 + n2; */
-
     let soma = n1 + n2 + n3
 
     prompt('O resultado da soma é ', soma)
 
     prompt('A media é ', soma/3)
+
 }
+
 </script>
 
 </body>
