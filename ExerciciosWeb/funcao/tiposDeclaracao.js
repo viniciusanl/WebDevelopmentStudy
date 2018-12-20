@@ -9,8 +9,10 @@ function soma(x, y){
 const sub = function (x, y) {
     return x - y
 }
+console.log(sub(10, 50))
 
 // Named Function Express
 const mult = function mult(x, y){
     return x * y
 }
+console.log(mult(10, 50))
