@@ -23,3 +23,9 @@ const div = function (a, b){
 }
 
 console.log(div(50, 5))
+
+const teste = function (x, y){
+    return (x + y)/2
+}
+
+console.log(teste(2, 2))
