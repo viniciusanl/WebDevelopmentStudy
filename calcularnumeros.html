@@ -20,7 +20,31 @@
 <input type="text" name="" value="" id="n3" placeholder="Digite um numero"/>
 </form>
 
+    <br>
+
 <button onclick="somar()">Somar</button>
+
+<br><br>
+
+<form action="" id="formulario" method="POST">
+    <input type="text" name="" value="" id="tanque1" placeholder="Capacidade do tanque" /><br>
+    <input type="text" name="" value="" id="distancia1" placeholder="Distancia percorrida" /><br>
+    <input type="text" name="" value="" id="gasolina1" placeholder="Valor da gasolina" />
+</form>
+
+<br><br>
+
+<button onclick="calculoVeiculo()">Calcular</button>
+
+<script>
+    function pularLinha() {
+        document.write("<br></br>")
+    }
+
+    function linhaNaTela() {
+        document.write("<hr>")
+    }
+</script>
 
 <script>
 function somar() {
@@ -36,13 +60,42 @@ function somar() {
 
     /* Descrição que está no livro */
 
-    document.write("O resultado da soma é ", soma ,"<br>")
+    document.write("O resultado da soma é ", soma)
+
+    pularLinha()
+
+    linhaNaTela()
 
     document.write('A media é ', soma/3)
 
-    prompt("O software vai fazer o calculo")
-
 }
+</script>
+
+<script>
+{
+    function calculoVeiculo(){
+        let tanque = tanque1 = parseInt(document.getElementById('tanque1').value)
+
+        let distancia = distancia1 = parseInt(document.getElementById('distancia1').value)
+
+        let gasolina = gasolina1 = parseInt(document.getElementById('gasolina1').value)
+
+        let consumo = (distancia / tanque)
+
+        let valorTotal = (tanque * gasolina)
+
+        /* toFixed() = delimita a quantidade de casas decimais de um valor */
+
+        document.write("O consumo do seu carro na distância percorrida foi ", consumo.toFixed(2), "Km/L")
+
+        pularLinha()
+
+        linhaNaTela()
+
+        document.write("O valor total gasto com combustível foi de R$", valorTotal)
+    }
+}
+
 </script>
 
 </body>
