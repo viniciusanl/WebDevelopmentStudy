@@ -29,3 +29,8 @@ const teste = function (x, y){
 }
 
 console.log(teste(2, 2))
+
+function mostra(texto) {
+    console.log(texto + "<br></br>")
+}
+mostra("Usando função para melhorar o codigo")
