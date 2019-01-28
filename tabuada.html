@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Taboada</title>
+    <title>Tabuada</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -14,12 +14,23 @@
 </head>
 
 <body>
-    <h1>Taboada</h1>
+    <h1>Tabuada</h1>
 
+    <!-- <a href="javascript:history.back()">Go Back</a> -->
+    
     <form action="" id="taboada" method="POST">
         <input type="number" name="" value="" id="n" placeholder="Digite um numero">
     </form>
     <br>
+
+    <script>
+        document.addEventListener('keypress', function(e){
+            if(e.which == 13){
+            multiplicar();
+            }
+        }, false);
+
+    </script>
 
     <button type="button" class="btn btn-success" onclick=multiplicar()>Multiplicar</button>
 
@@ -35,6 +46,10 @@
             document.write(" ", num, " X ", cont, " = ", num*cont)
             pularLinha()
         }
+        
+        /* COmando para voltar a página anterior utilizando JS puro */
+
+        document.write('<a href="' + document.referrer + '">Voltar</a>');
     }
     </script>
 
