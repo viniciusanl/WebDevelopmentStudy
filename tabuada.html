@@ -23,14 +23,15 @@
     </form>
     <br>
 
+    <!-- Script para definir o botão enter para executar a função -->
     <script>
-        document.addEventListener('keypress', function(e){
-            if(e.which == 13){
-            multiplicar();
+        document.addEventListener('keypress', function (e) {
+            if (e.which == 13) {
+                multiplicar();
             }
         }, false);
-
     </script>
+    <!-- O Script do botão enter termina aqui -->
 
     <button type="button" class="btn btn-success" onclick=multiplicar()>Multiplicar</button>
 

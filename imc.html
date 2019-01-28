@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Vinicius Andrade Lopes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <script src="main.js"></script>
+</head>
+
+<body>
+
+    <p>Calculo IMC</p>
+
+    <form action="" id="formulario" method="POST">
+        <input type="text" name="" value="" id="n_nome" placeholder="Digite seu nome" /><br></br>
+        <input type="number" name="" value="" id="n_peso" placeholder="Digite seu peso" /><br></br>
+        <input type="number" step="0.010" id="n_altura" placeholder="Digite sua altura" /><br>
+        
+    </form>
+
+    <br>
+
+    <!-- Script para definir o botão enter para executar a função -->
+    <script>
+        document.addEventListener('keypress', function (e) {
+            if (e.which == 13) {
+                imc();
+            }
+        }, false);
+    </script>
+    <!-- O Script do botão enter termina aqui -->
+
+    <button type="button" class="btn btn-success" onclick=" imc()">IMC</button>
+
+<script>
+    function imc() {
+        /*var person = prompt("Please enter your name", "Harry Potter");*/
+
+        let nome = n_nome = parseInt(document.getElementById('n_nome'))
+
+        let peso = n_peso = parseInt(document.getElementById('n_peso').value)
+
+        let altura = n_altura = parseInt(document.getElementById('n_altura').value)
+
+        let alturatotal = altura * altura
+        /* Descrição que está no livro */
+
+        let imc = peso / alturatotal
+
+        document.write("O IMC do indivíduo ", nome, " é de " , imc, "<br></br>")
+
+        document.write('<a href="' + document.referrer + '">Voltar</a>');
+
+    }
+</script>
