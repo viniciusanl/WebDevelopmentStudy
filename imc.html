@@ -17,9 +17,15 @@
     <p>Calculo IMC</p>
 
     <form action="" id="formulario" method="POST">
-        <input type="text" name="" value="" id="n_nome" placeholder="Digite seu nome" /><br></br>
-        <input type="number" name="" value="" id="n_peso" placeholder="Digite seu peso" /><br></br>
-        <input type="number" step="0.010" id="n_altura" placeholder="Digite sua altura" /><br>
+        <input id="nnome" type="text" placeholder="Digite seu nome" /><br></br>
+        <input id="npeso" type="number" placeholder="Digite seu peso" /><br></br>
+        <input id="naltura" min="1"type="number" step="0.010" placeholder="Digite sua altura" /><br>
+
+        <script>
+            document.getElementById("naltura").addEventListener("change", function () {
+                    this.value = parseFloat(this.value).toFixed(2);
+                });
+        </script>
         
     </form>
 
@@ -41,11 +47,11 @@
     function imc() {
         /*var person = prompt("Please enter your name", "Harry Potter");*/
 
-        let nome = n_nome = parseInt(document.getElementById('n_nome'))
+        let nome = nnome = parseInt(document.getElementById('nnome').value)
 
-        let peso = n_peso = parseInt(document.getElementById('n_peso').value)
+        let peso = npeso = parseInt(document.getElementById('npeso').value)
 
-        let altura = n_altura = parseInt(document.getElementById('n_altura').value)
+        let altura = naltura = parseInt(document.getElementById('naltura').value)
 
         let alturatotal = altura * altura
         /* Descrição que está no livro */
