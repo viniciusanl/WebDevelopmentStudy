@@ -19,7 +19,7 @@
     <form action="" id="formulario" method="POST">
         <input id="nnome" type="text" placeholder="Digite seu nome" /><br></br>
         <input id="npeso" type="number" placeholder="Digite seu peso" /><br></br>
-        <input id="naltura" min="1"type="number" step="0.010" placeholder="Digite sua altura" /><br>
+        <input id="naltura" min="1" type="number" step="0.010" placeholder="Digite sua altura" /><br>
 
         <script>
             document.getElementById("naltura").addEventListener("change", function () {
@@ -56,9 +56,9 @@
         let alturatotal = altura * altura
         /* Descrição que está no livro */
 
-        let imc = peso / alturatotal
+        let imc = peso / (altura*altura)
 
-        document.write("O IMC do indivíduo ", nome, " é de " , imc, "<br></br>")
+        document.write("O IMC do indivíduo ", nome, " é de " , imc.toFixed(2), "<br></br>")
 
         /* Botão de voltar na pagina */
         document.write('<a href="' + document.referrer + '">Voltar</a>');
